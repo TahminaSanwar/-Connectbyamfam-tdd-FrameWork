@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-04T18:28:36Z" name="Default suite" finished-at="2022-02-04T18:28:55Z" duration-ms="18895">
+  <suite started-at="2022-02-06T03:38:57Z" name="Default suite" finished-at="2022-02-06T03:39:10Z" duration-ms="12889">
     <groups>
     </groups>
-    <test started-at="2022-02-04T18:28:36Z" name="Default test" finished-at="2022-02-04T18:28:55Z" duration-ms="18895">
+    <test started-at="2022-02-06T03:38:57Z" name="Default test" finished-at="2022-02-06T03:39:10Z" duration-ms="12889">
       <class name="test.FinalTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.FinalTest@1046d517]" started-at="2022-02-04T18:28:36Z" name="setUp" finished-at="2022-02-04T18:28:41Z" duration-ms="4846" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.FinalTest@1fc32e4f]" started-at="2022-02-06T03:38:57Z" name="setUp" finished-at="2022-02-06T03:39:04Z" duration-ms="6877" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="autoInsTest()[pri:0, instance:test.FinalTest@1046d517]" started-at="2022-02-04T18:28:41Z" name="autoInsTest" finished-at="2022-02-04T18:28:55Z" duration-ms="13606" status="PASS">
+        <test-method signature="autoInsTest()[pri:0, instance:test.FinalTest@1fc32e4f]" started-at="2022-02-06T03:39:04Z" name="autoInsTest" finished-at="2022-02-06T03:39:09Z" duration-ms="5496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- autoInsTest -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:test.FinalTest@1046d517]" started-at="2022-02-04T18:28:55Z" name="tearUp" finished-at="2022-02-04T18:28:55Z" duration-ms="419" status="PASS">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:test.FinalTest@1fc32e4f]" started-at="2022-02-06T03:39:09Z" name="tearUp" finished-at="2022-02-06T03:39:10Z" duration-ms="470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
