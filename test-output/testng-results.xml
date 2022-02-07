@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-06T03:38:57Z" name="Default suite" finished-at="2022-02-06T03:39:10Z" duration-ms="12889">
+  <suite started-at="2022-02-07T03:32:45Z" name="Default suite" finished-at="2022-02-07T03:33:13Z" duration-ms="28018">
     <groups>
     </groups>
-    <test started-at="2022-02-06T03:38:57Z" name="Default test" finished-at="2022-02-06T03:39:10Z" duration-ms="12889">
-      <class name="test.FinalTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.FinalTest@1fc32e4f]" started-at="2022-02-06T03:38:57Z" name="setUp" finished-at="2022-02-06T03:39:04Z" duration-ms="6877" status="PASS">
+    <test started-at="2022-02-07T03:32:45Z" name="Default test" finished-at="2022-02-07T03:33:13Z" duration-ms="28018">
+      <class name="test.UpdateCreditCardTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.UpdateCreditCardTest@1fc32e4f]" started-at="2022-02-07T03:32:45Z" name="setUp" finished-at="2022-02-07T03:32:53Z" duration-ms="8064" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="autoInsTest()[pri:0, instance:test.FinalTest@1fc32e4f]" started-at="2022-02-06T03:39:04Z" name="autoInsTest" finished-at="2022-02-06T03:39:09Z" duration-ms="5496" status="PASS">
+        <test-method signature="test()[pri:0, instance:test.UpdateCreditCardTest@1fc32e4f]" started-at="2022-02-07T03:32:53Z" name="test" finished-at="2022-02-07T03:33:13Z" duration-ms="19567" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- autoInsTest -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:test.FinalTest@1fc32e4f]" started-at="2022-02-06T03:39:09Z" name="tearUp" finished-at="2022-02-06T03:39:10Z" duration-ms="470" status="PASS">
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:test.UpdateCreditCardTest@1fc32e4f]" started-at="2022-02-07T03:33:13Z" name="tearUp" finished-at="2022-02-07T03:33:13Z" duration-ms="359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
-      </class> <!-- test.FinalTest -->
+      </class> <!-- test.UpdateCreditCardTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

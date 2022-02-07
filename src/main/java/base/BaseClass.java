@@ -13,6 +13,7 @@ import common.CommonMethods;
 import common.CommonWaits;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.ProductPages;
+import pages.UpdateCreditCard;
 
 public class BaseClass {
 	public static WebDriver driver;
@@ -21,6 +22,7 @@ public class BaseClass {
 	public static CommonWaits waits;
 	public static JavascriptExecutor js;
 	public ProductPages productPages;
+	public UpdateCreditCard updateCreditCard;
 
 	@BeforeMethod
 	public void setUp() {
@@ -46,6 +48,7 @@ public class BaseClass {
 		cm = new CommonMethods();
 		waits = new CommonWaits();
 		productPages = new ProductPages(driver);
+		updateCreditCard=new UpdateCreditCard(driver);
 
 	}
 }

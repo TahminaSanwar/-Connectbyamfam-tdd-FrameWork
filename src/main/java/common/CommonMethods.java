@@ -1,7 +1,10 @@
 package common;
 
 import java.util.NoSuchElementException;
+
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.ElementNotVisibleException;
+import org.openqa.selenium.NoSuchWindowException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -47,7 +50,7 @@ public class CommonMethods {
 			element.sendKeys(value);
 			Java_logger.getLog(element + ":Selected by visibility" + element);
 
-		} catch (IllegalArgumentException | NullPointerException e) {
+		} catch (NoSuchWindowException | NullPointerException e) {
 			e.printStackTrace();
 			Java_logger.getLog(element + ":Element not found");
 			Assert.fail();
@@ -66,6 +69,21 @@ public class CommonMethods {
 			e.printStackTrace();
 			Java_logger.getLog(text + ":Element not found");
 			Assert.fail();
+		}
+
+	}
+
+	public void radioButton(WebElement element) {
+		try {
+			BaseClass.waits.waitUntilSelectable(element);
+			element.isSelected();
+			Java_logger.getLog(element + ":Selected by visibility" + element);
+
+		} catch (ElementClickInterceptedException e) {
+			e.printStackTrace();
+			Java_logger.getLog("Element not found");
+			Assert.fail();
+
 		}
 
 	}
