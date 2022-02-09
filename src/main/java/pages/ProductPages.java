@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import base.BaseClass;
 import common.CommonMethods;
 
 public class ProductPages {
@@ -17,36 +18,36 @@ public class ProductPages {
 	public WebElement insuranceChoices;
 	@FindBy(xpath = "(//a[contains(text(),'Coverage')])[1]")
 	public WebElement coverage;
-	@FindBy(xpath = "//input[@id='uid_218']")
+	@FindBy(xpath = "(//input[@name='zip'])[1]")
 	public WebElement zipCode;
-	@FindBy(xpath = "//select[@id='uid_221']")
+	@FindBy(xpath = "//select[@id='uid_222']")
 	public WebElement typeOfInsDropDown;
 	@FindBy(xpath = "//button[contains(text(),'Get a Quote')]")
 	public WebElement getAQuote;
 
 	public void insuranceChoicesMethod(CommonMethods cm, WebDriver driver) {
-		cm.hoverover(driver, insuranceChoices);
+		BaseClass.cm.hoverover(driver, insuranceChoices);
 	}
 
 	public void coverageMethod(CommonMethods cm) {
-		cm.clickable(coverage);
+		BaseClass.cm.clickable(coverage);
 
 	}
 
 	public void zipCodeMethods(CommonMethods cm) {
-		cm.clickable(zipCode);
-		cm.sendText(zipCode, "11355");
+		BaseClass.cm.clickable(zipCode);
+		BaseClass.cm.sendText(zipCode, "11355");
 
 	}
 
 	public void typeOfInsDropDownMethod(CommonMethods cm) {
-		cm.clickable(typeOfInsDropDown);
-		cm.dropDown(typeOfInsDropDown, "Renters");
+		BaseClass.cm.clickable(typeOfInsDropDown);
+		BaseClass.cm.dropDown(typeOfInsDropDown, "Renters");
 
 	}
 
 	public void getAQuoteMethod(CommonMethods cm) {
-		cm.clickable(getAQuote);
+		BaseClass.cm.clickable(getAQuote);
 
 	}
 

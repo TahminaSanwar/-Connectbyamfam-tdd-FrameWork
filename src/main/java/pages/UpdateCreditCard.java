@@ -30,7 +30,7 @@ public class UpdateCreditCard {
 	public WebElement policyType;
 
 	public void updateCreditCardMethod(CommonMethods cm) {
-		cm.clickable(updateCreditCard);
+		BaseClass.cm.clickable(updateCreditCard);
 
 	}
 
@@ -42,25 +42,25 @@ public class UpdateCreditCard {
 	    	BaseClass.driver.switchTo().window(newWindow);
 	    } 
 	  //  cm.clickable(firstName);
-		cm.sendText(firstName, "Tahmina");
+	    BaseClass.cm.sendText(firstName, "Tahmina");
 
 	}
 
 	public void lastNameMethod(CommonMethods cm) {
 	//	cm.clickable(lastName);
-		cm.sendText(lastName, "Sanwar");
+		BaseClass.cm.sendText(lastName, "Sanwar");
 
 	}
 
 	public void dateOfBirthMethod(CommonMethods cm) {
-		cm.clickable(dateOfBirth);
-		cm.sendText(dateOfBirth, "10271983");
+		BaseClass.cm.clickable(dateOfBirth);
+		BaseClass.cm.sendText(dateOfBirth, "10271983");
 
 	}
 
 	public void zipCodeMethod(CommonMethods cm) {
-		cm.clickable(zipCode);
-		cm.sendText(zipCode, "11355");
+		BaseClass.cm.clickable(zipCode);
+		BaseClass.cm.sendText(zipCode, "11355");
 
 	}
 
