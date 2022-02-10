@@ -32,8 +32,7 @@ public class Configurable {
 	}
 
 	private void loadProperties() {
-		// BufferedReader bufferedReader;
-		// FileReader fileReader;
+		
 		FileInputStream fileInputStream;
 		try {
 			fileInputStream = new FileInputStream(path);
